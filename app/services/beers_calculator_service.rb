@@ -4,7 +4,7 @@ class BeersCalculatorService
   end
 
   def findBestStyleBasedOnTemperature(temperature)
-    processedBeers = calcDifference(temperature)
+    processedBeers = calcDifference(temperature.to_d)
 
     best = sortByDiff(processedBeers).first
 
